@@ -1,0 +1,245 @@
+html {
+	background-color: #ffffff;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+}
+
+nav {
+	width: 100%;
+	height: 140px;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	background-color: #ffffff;
+}
+
+.caixa-menu {
+	display: inline-flex;
+    justify-content: center;
+	align-items: center;
+	width: 100%;
+    height: inherit;
+}
+
+#container-nome {
+	position: relative;
+	width: 33%;
+	display: inline-block;
+	text-align: center;
+	margin-top: 12px;
+	cursor: pointer;
+}
+
+#container-nome a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.nome {
+	font-size: 24pt;
+	font-weight: 800;
+	line-height: 1.5;
+	text-transform: lowercase;
+	transition: 400ms;
+}
+
+#container-nome:hover .nome {
+	font-size: 28pt;
+}
+
+.home {
+	opacity: 0%;
+	transition: 400ms;
+}
+
+#container-nome:hover .home {
+	opacity: 100%;
+}
+
+.caixa-menu ul {
+	display: inline;
+	vertical-align: middle;
+}
+
+.btn {
+	font-size: 12pt;
+	font-weight: 500;
+	display: inline-block;
+	padding: 0 36px;
+	text-transform: lowercase;
+	transition: 200ms;
+	cursor: pointer;
+}
+
+.btn:hover {
+	font-size: 16pt;
+	font-weight: 700;
+}
+
+.ativo {
+	font-size: 16pt;
+	font-weight: 800;
+}
+
+main {
+	width: min(90%, 1400px);
+	margin: 0 auto;
+}
+
+.trab {
+	width: 60%;
+	margin-bottom: 3em;
+}
+
+.escondido {
+	display: none;
+}
+
+.caixa-img a {
+	color: inherit;
+	text-decoration: none;
+}
+
+li img {
+	width: 80%;
+	transition: 400ms;
+}
+
+li img:hover {
+	width: 100%;
+}
+
+.titulo-trabalho {
+	font-family: 'Rubik', sans-serif;
+	font-size: 60pt;
+	font-weight: 800;
+	width: 100%;
+	text-transform: uppercase;
+	color: white;
+	mix-blend-mode: difference;
+	margin-top: -0.66em;
+}
+
+.trab p {
+	line-height: 1.5;
+}
+
+.trab p em {
+	font-style: italic;
+}
+
+.funcao {
+	font-weight: 700;
+	text-transform: lowercase;
+}
+
+.left {
+	left: 0px;
+	text-align: left;
+	margin-right: auto;
+}
+
+.left .titulo-trabalho {
+	margin-left: 2.33em;
+}
+
+.left p {
+	margin-left: 2em;
+}
+
+.right {
+	right: 0px;
+	text-align: right;
+	margin-left: auto;
+}
+
+.right .titulo-trabalho {
+	margin-left: -2.33em;
+}
+
+.right p {
+	margin-right: 2em;
+}
+
+.titulo-trabalho-longo {
+	margin-top: -1.66em;
+}
+
+a {
+	color: inherit;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+
+	nav {
+		height: auto;
+	}
+	
+	.caixa-menu {
+		display: block;
+	}
+
+	#container-nome {
+		width: 100%;
+		text-align: center;
+	}
+
+	.home {
+		display: none;
+	}
+
+	.btn {
+		display: block;
+		text-align: center;
+		line-height: 2em;
+	}
+
+	.btn:last-child {
+		padding-bottom: 1em;
+	}
+
+	main {
+		width: 100%;
+	}
+
+	.trab {
+		float: none;
+		width: 100%;
+	}
+
+	.trab img {
+		width: 100%;
+	}
+
+	.titulo-trabalho {
+		font-size: 36pt;
+	}
+
+	.titulo-trabalho-longo {
+		margin-top: -0.66em;
+	}
+
+	.left .titulo-trabalho {
+		margin-left: auto;
+	}
+
+	.left p {
+		margin-left: 1em;
+	}
+
+	.right .titulo-trabalho {
+		margin-left: auto;
+	}
+
+	.right p {
+		margin-right: 1em;
+	}
+}
