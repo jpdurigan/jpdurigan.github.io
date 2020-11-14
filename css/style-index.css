@@ -32,7 +32,7 @@ nav {
     letter-spacing: 0.125em;
     padding: 0 48px;
     transition: 200ms;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .btn:hover {
