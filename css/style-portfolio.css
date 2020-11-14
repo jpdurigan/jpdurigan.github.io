@@ -3,33 +3,34 @@ html {
 }
 
 body {
+	color: #4e4e4e;
 	font-family: 'Nunito', sans-serif;
 }
 
 nav {
-	width: 100%;
+	background-color: #ffffff;
 	height: 140px;
 	position: sticky;
 	top: 0;
+	width: 100%;
 	z-index: 1;
-	background-color: #ffffff;
 }
 
 .caixa-menu {
-	display: inline-flex;
-    justify-content: center;
 	align-items: center;
-	width: 100%;
+	display: inline-flex;
     height: inherit;
+    justify-content: center;
+	width: 100%;
 }
 
 #container-nome {
-	position: relative;
-	width: 33%;
-	display: inline-block;
-	text-align: center;
-	margin-top: 12px;
 	cursor: pointer;
+	display: inline-block;
+	margin-top: 12px;
+	position: relative;
+	text-align: center;
+	width: 33%;
 }
 
 #container-nome a {
@@ -38,6 +39,7 @@ nav {
 }
 
 .nome {
+	color: black;
 	font-size: 24pt;
 	font-weight: 800;
 	line-height: 1.5;
@@ -50,8 +52,8 @@ nav {
 }
 
 .home {
-	opacity: 0%;
 	font-weight: 500;
+	opacity: 0%;
 	transition: 400ms;
 }
 
@@ -65,13 +67,13 @@ nav {
 }
 
 .btn {
+	cursor: pointer;
+	display: inline-block;
 	font-size: 12pt;
 	font-weight: 500;
-	display: inline-block;
 	padding: 0 36px;
 	text-transform: lowercase;
 	transition: 200ms;
-	cursor: pointer;
 }
 
 .btn:hover {
@@ -85,13 +87,13 @@ nav {
 }
 
 main {
-	width: min(90%, 1400px);
 	margin: 0 auto;
+	width: min(90%, 1400px);
 }
 
 .trab {
-	width: 60%;
 	margin-bottom: 3em;
+	width: 60%;
 }
 
 .escondido {
@@ -104,8 +106,8 @@ main {
 }
 
 li img {
-	width: 80%;
 	transition: 400ms;
+	width: 80%;
 }
 
 li img:hover {
@@ -113,14 +115,14 @@ li img:hover {
 }
 
 .titulo-trabalho {
+	color: white;
 	font-family: 'Rubik', sans-serif;
 	font-size: 60pt;
 	font-weight: 800;
-	width: 100%;
-	text-transform: uppercase;
-	color: white;
-	mix-blend-mode: difference;
 	margin-top: -0.66em;
+	mix-blend-mode: difference;
+	text-transform: uppercase;
+	width: 100%;
 }
 
 .trab p {
@@ -132,14 +134,15 @@ li img:hover {
 }
 
 .funcao {
+	color: black;
 	font-weight: 700;
 	text-transform: lowercase;
 }
 
 .left {
 	left: 0px;
-	text-align: left;
 	margin-right: auto;
+	text-align: left;
 }
 
 .left .titulo-trabalho {
@@ -151,9 +154,9 @@ li img:hover {
 }
 
 .right {
+	margin-left: auto;
 	right: 0px;
 	text-align: right;
-	margin-left: auto;
 }
 
 .right .titulo-trabalho {
@@ -168,13 +171,13 @@ li img:hover {
 	margin-top: -1.66em;
 }
 
-a {
+p a {
 	color: inherit;
 	font-weight: 700;
 	text-decoration: none;
 }
 
-a:hover {
+p a:hover {
 	text-decoration: underline;
 }
 
@@ -189,8 +192,8 @@ a:hover {
 	}
 
 	#container-nome {
-		width: 100%;
 		text-align: center;
+		width: 100%;
 	}
 
 	.home {
