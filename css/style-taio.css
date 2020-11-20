@@ -1,0 +1,53 @@
+html {
+    background-color: black;
+}
+
+body {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 60%;
+}
+
+header {
+    margin-top: 40vh;
+}
+
+.nome {
+    font-size: 86pt;
+    font-weight: 800;
+}
+
+header p {
+    letter-spacing: 0.125em;
+    line-height: 2em;
+}
+
+.links {
+    font-size: 10pt;
+    letter-spacing: 0.1em;
+    line-height: 3em;
+    margin-top: 2vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+@media (max-width: 1200px) {
+    main {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
