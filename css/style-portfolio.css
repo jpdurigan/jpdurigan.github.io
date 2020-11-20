@@ -181,6 +181,12 @@ p a:hover {
 	text-decoration: underline;
 }
 
+iframe {
+	display: flex;
+	margin: 0 auto 24px;
+	width: 50%;
+}
+
 @media (max-width: 900px) {
 
 	nav {
@@ -245,5 +251,9 @@ p a:hover {
 
 	.right p {
 		margin-right: 1em;
+	}
+
+	iframe {
+		width: 100%;
 	}
 }
