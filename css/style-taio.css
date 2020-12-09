@@ -6,21 +6,27 @@ body {
     color: white;
     font-family: 'Orbitron', sans-serif;
     overflow: hidden;
-    text-align: center;
 }
 
 main {
     margin: 0 auto;
-    width: 60%;
 }
 
 header {
-    margin-top: 40vh;
+    background-image: linear-gradient(black 40%, transparent);
+    display: flex;
+    margin: 0 auto;
+    padding: 10vh 20% 0;
 }
 
 .nome {
+    background: -webkit-linear-gradient(#fff, #999);
     font-size: 86pt;
     font-weight: 800;
+    text-align: left;
+    width: 50%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 header p {
@@ -29,10 +35,12 @@ header p {
 }
 
 .links {
+    align-self: center;
     font-size: 10pt;
     letter-spacing: 0.1em;
     line-height: 3em;
     margin-top: 2vh;
+    text-align: right;
 }
 
 a {
@@ -45,9 +53,38 @@ a:visited {
     text-decoration: inherit;
 }
 
+.content {
+    width: 60%;
+    margin: 5vh auto;
+}
+
+.content iframe {
+    width: 100%;
+    height: -webkit-fill-available;
+    overflow: hidden;
+}
+
 @media (max-width: 1200px) {
     main {
         margin: 0 auto;
-        width: 90%;
+        width: 100%;
+    }
+
+    header {
+        display: inline-block;
+        width: inherit;
+    }
+    
+    .nome {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .links {
+        text-align: center;
+    }
+
+    .content {
+        width: inherit
     }
 }
