@@ -140,6 +140,11 @@ a:visited {
     margin-right: 40%;
 }
 
+.block-scroll {
+    position: fixed;
+    width: 100%;
+}
+
 @media (max-width: 1200px) {
     main {
         margin: 0 auto;

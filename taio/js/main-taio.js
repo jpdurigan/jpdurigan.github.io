@@ -31,19 +31,22 @@ function toggleContent() {
     const links = $('.links p');
     const content = $('.content');
     const showContent = $('#show-content');
+    const main = $('main');
 
     if (showContent.hasClass('hidden')) {
         for (element of [taio, links, content]) {
             element.fadeOut();
         };
-        $('#show-content').fadeIn();
-        $('#show-content').removeClass('hidden');
+        showContent.fadeIn();
+        showContent.removeClass('hidden');
+        main.addClass('block-scroll');
     } else {
         for (element of [taio, links, content]) {
             element.fadeIn();
         };
-        $('#show-content').fadeOut();
-        $('#show-content').addClass('hidden');
+        showContent.fadeOut();
+        showContent.addClass('hidden');
+        main.removeClass('block-scroll');
     }
 }
 
