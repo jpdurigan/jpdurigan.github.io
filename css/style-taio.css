@@ -36,11 +36,10 @@ header {
 
 .nome {
     background: -webkit-linear-gradient(#fff, #999);
+    background-clip: text;
     font-size: 86pt;
     font-weight: 800;
     text-align: left;
-    width: 50%;
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -57,17 +56,22 @@ header p {
     line-height: 3em;
     margin-top: 2vh;
     text-align: right;
-    width: 50%;
+    width: 100%;
 }
 
 a {
     color: inherit;
+    cursor: pointer;
     text-decoration: underline;
 }
 
 a:visited {
     color: inherit;
     text-decoration: inherit;
+}
+
+.hidden {
+    display: none;
 }
 
 .content {
@@ -85,6 +89,7 @@ a:visited {
 }
 
 .content video {
+    cursor: pointer;
     display: flex;
     height: 600px;
     margin: 0 auto 10vh;

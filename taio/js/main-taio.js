@@ -12,7 +12,7 @@ function playVideo() {
     } catch(err) {
         print(err);
     }
-    
+
     corporeoQuery.one('ended', (event) => {
         print('video acabou');
         if (document.fullscreenElement) {
@@ -26,6 +26,26 @@ function playVideo() {
 }
 
 
+function toggleContent() {
+    const taio = $('.nome');
+    const links = $('.links p');
+    const content = $('.content');
+    const showContent = $('#show-content');
+
+    if (showContent.hasClass('hidden')) {
+        for (element of [taio, links, content]) {
+            element.fadeOut();
+        };
+        $('#show-content').fadeIn();
+        $('#show-content').removeClass('hidden');
+    } else {
+        for (element of [taio, links, content]) {
+            element.fadeIn();
+        };
+        $('#show-content').fadeOut();
+        $('#show-content').addClass('hidden');
+    }
+}
 
 
 // animação do bg
