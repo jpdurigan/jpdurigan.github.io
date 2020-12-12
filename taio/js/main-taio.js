@@ -36,6 +36,7 @@ function setup() {
     maxIndex = createVector(x_count - 1, y_count - 1);
 }
 
+
 function draw() {
     background(0);
     for (var x = 0; x < maxIndex.x; x++) {
