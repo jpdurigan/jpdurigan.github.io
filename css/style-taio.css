@@ -40,6 +40,7 @@ header {
     font-weight: 800;
     text-align: left;
     width: 50%;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -137,12 +138,12 @@ a:visited {
 @media (max-width: 1200px) {
     main {
         margin: 0 auto;
-        width: 100%;
     }
 
     header {
         display: inline-block;
-        width: inherit;
+        padding: 10vh 0 0;
+        width: 100%;
     }
     
     .nome {
@@ -156,6 +157,48 @@ a:visited {
     }
 
     .content {
-        width: inherit
+        width: inherit;
+    }
+
+    .content h1 {
+        font-size: 60pt;
+    }
+
+    .content video {
+        height: 400px;
+    }
+
+    .excerpt .quote {
+        font-size: 42pt;
+        width: 100%;
+    }
+
+    .left .quote {
+        text-align: right;
+        margin-right: auto;
+    }
+    
+    .right .quote {
+        text-align: left;
+        margin-left: auto;
+    }
+
+    .excerpt p {
+        width: 80%;
+    }
+
+    .content img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .left p {
+        margin-left: 12px;
+        margin-right: auto;
+    }
+    
+    .right p {
+        margin-left: auto;
+        margin-right: 12px;
     }
 }
