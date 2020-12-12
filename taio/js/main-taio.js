@@ -1,3 +1,35 @@
+function playVideo() {
+    const corporeoVideo = document.getElementById('corporeo-video');
+    const corporeoQuery = $('#corporeo-video');
+
+    corporeoQuery.attr('controls', '');
+    try {
+        corporeoVideo.play();
+
+        corporeoVideo.requestFullscreen();
+        document.webkitRequestFullscreen();
+        document.mozRequestFullscreen();
+    } catch(err) {
+        print(err);
+    }
+    
+    corporeoQuery.one('ended', (event) => {
+        print('video acabou');
+        if (document.fullscreenElement) {
+            document.webkitExitFullscreen();
+            document.mozCancelFullscreen();
+            document.exitFullscreen();
+        }
+        corporeoQuery.removeAttr('controls');
+        corporeoVideo.load();
+    });
+}
+
+
+
+
+// animação do bg
+
 let SEPARATION = 80;
 let MOUSE_STRENGTH = 4;
 let CHILD_NUMBER = 10;
