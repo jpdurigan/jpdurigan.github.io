@@ -1,3 +1,5 @@
+// controle do vídeo principal
+
 function playVideo() {
     const corporeoVideo = document.getElementById('corporeo-video');
     const corporeoQuery = $('#corporeo-video');
@@ -14,7 +16,6 @@ function playVideo() {
     }
 
     corporeoQuery.one('ended', (event) => {
-        print('video acabou');
         if (document.fullscreenElement) {
             document.webkitExitFullscreen();
             document.mozCancelFullscreen();
@@ -25,6 +26,8 @@ function playVideo() {
     });
 }
 
+
+// esconder conteúdo
 
 function toggleContent() {
     const taio = $('.nome');
