@@ -1,0 +1,87 @@
+html {
+	background-color: #ffffff;
+}
+
+body {
+    color: #4e4e4e;
+	font-family: 'Heebo', sans-serif;
+}
+
+main {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.selfie {
+    display: flex;
+    margin-right: 8px;
+    width: 300px;
+}
+
+.selfie img {
+    height: 300px;
+    object-fit: cover;
+    width: 300px;
+}
+
+#p5-canvas {
+    left: -300px;
+    mix-blend-mode: screen;
+    position: relative;
+}
+
+.description {
+    align-self: flex-end;
+    margin-bottom: 28px;
+    line-height: 1.5;
+}
+
+.nome {
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+}
+
+#contact-info {
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    main {
+        display: inline;
+    }
+
+    .selfie {
+        margin: 0 auto;
+        width: 200px;
+    }
+
+    .selfie img {
+        height: 200px;
+        width: 200px;
+    }
+    
+    #p5-canvas {
+        left: -200px;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .nome {
+        font-size: 28px;
+    }
+
+}

@@ -19,17 +19,37 @@
 		<!-- <meta property="twitter:image" content="video/poster.png"> -->
 
 		<link rel="stylesheet" href="../css/reset.css">
-        <link rel="stylesheet" href="../css/style-index.css">
+        <link rel="stylesheet" href="../css/style-bio.css">
         
         <link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
 		<link rel="icon" href="../imgs/favicon-16.png" sizes="16x16">
 		<link rel="icon" href="../imgs/favicon-32.png" sizes="32x32">
 	</head>
 
 	<body>
-
+        <main>
+            <div class="selfie">
+                <img src="imgs/selfie.jpg">
+                <div id='p5-canvas'></div>
+            </div>
+            <div class="description">
+                <h1 class='nome'>joão pedro durigan</h1>
+                <ul>
+                    <li>artista multimídia</li>
+                    <li>são paulo + jaboticabal</li>
+                    <li>programação + produção musical + audiovisual</li>
+                </ul>
+                <ul id="contact-info">
+                    <li>email: <a href="malito:jpdurigan@gmail.com">jpdurigan@gmail.com</a></li>
+                    <li>instagram: <a href="https://www.instagram.com/jpdurigan/">@jpdurigan</a></li>
+                </ul>
+            </div>
+        </main>
 	</body>
 
+    <script src ="../js/jquery-3.5.1.min.js"></script>
+    <script src ="../js/p5.min.js"></script>
+    <script src ="js/main-bio.js"></script>
 	
 </html>
