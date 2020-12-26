@@ -18,9 +18,9 @@ function setup() {
   pointZero = createVector(width/2, GAP);
   radius = centerPoint.dist(pointZero);
   INCREMENT = TWO_PI / 8;
- 
-  stroke(255);
   currentAngle = 0
+  circlePoints = []
+
   while(currentAngle < TWO_PI) {
     newPosition = createVector(radius * sin(currentAngle), radius * cos(currentAngle));
     newPoint = new circlePoint(newPosition);
