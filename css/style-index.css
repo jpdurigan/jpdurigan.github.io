@@ -46,6 +46,35 @@ nav {
     text-decoration: none;
 }
 
+.white-popup {
+    background: #FFF;
+    box-shadow: 0 0 40px 2px #0006;
+    display: none;
+    padding: 25px;
+    position: relative;
+    margin: 0 auto; 
+    max-width: 900px;
+    top: calc(-50vh - 200px);
+    width: auto;
+}
+
+#bio-popup a {
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    float: right;
+}
+
+iframe {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    min-height: 304px;
+    min-width: 701px;
+    width: auto;
+}
+
 @media (max-width: 1200px) {
     video {
         bottom: 40%;
@@ -61,5 +90,20 @@ nav {
         display: block;
         line-height: 2em;
         text-align: center;
+    }
+
+    .white-popup {
+        max-width: 100%;
+        padding: 25px 0;
+        top: auto;
+    }
+
+    #bio-popup a {
+        margin-right: 24px;
+    }
+
+    iframe {
+        min-width: 80vw;
+        min-height: 100vh;
     }
 }
