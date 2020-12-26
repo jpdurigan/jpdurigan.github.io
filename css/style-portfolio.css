@@ -4,11 +4,12 @@ html {
 
 body {
 	color: #4e4e4e;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Heebo', sans-serif;
 }
 
 nav {
 	background-color: #ffffff;
+	font-family: 'Nunito', sans-serif;
 	height: 140px;
 	position: sticky;
 	top: 0;
@@ -69,7 +70,7 @@ nav {
 .btn {
 	cursor: pointer;
 	display: inline-block;
-	font-size: 12pt;
+	font-size: 14pt;
 	font-weight: 500;
 	padding: 0 36px;
 	text-transform: lowercase;
@@ -78,10 +79,9 @@ nav {
 
 .btn:hover {
 	font-size: 16pt;
-	font-weight: 700;
 }
 
-.ativo {
+.ativo, .ativo:hover {
 	font-size: 16pt;
 	font-weight: 800;
 }
@@ -126,7 +126,7 @@ li img:hover {
 }
 
 .trab p {
-	line-height: 1.5;
+	line-height: 1.6;
 }
 
 .trab p em {
