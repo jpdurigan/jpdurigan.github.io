@@ -25,7 +25,7 @@ nav {
 
 .btn {
     display: inline-block;
-    color: #6a6a6a;
+    color: #4e4e4e;
     cursor: pointer;
     font-size: 14pt;
     font-weight: 500;
@@ -36,8 +36,7 @@ nav {
 }
 
 .btn:hover {
-    color: #5c5c5c;
-    font-size: 16pt;
+    color: #707070;
     font-weight: 800;
 }
 
@@ -50,12 +49,11 @@ nav {
     background: #FFF;
     box-shadow: 0 0 40px 2px #0006;
     display: none;
+    left: calc((100% - 100vh) / 2);
     padding: 25px;
-    position: relative;
-    margin: 0 auto; 
-    max-width: 900px;
-    top: calc(-50vh - 200px);
-    width: auto;
+    position: absolute;
+    top: calc(50vh - 200px);
+    width: 100vh;
 }
 
 #bio-popup a {
