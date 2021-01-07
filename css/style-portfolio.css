@@ -105,12 +105,12 @@ main {
 	text-decoration: none;
 }
 
-li img {
+.trabalhos li img {
 	transition: 400ms;
 	width: 80%;
 }
 
-li img:hover {
+.trabalhos li img:hover {
 	width: 100%;
 }
 
@@ -181,10 +181,59 @@ p a:hover {
 	text-decoration: underline;
 }
 
-iframe {
+.trabalhos iframe {
 	display: flex;
 	margin: 0 auto 24px;
 	width: 50%;
+}
+
+.trabalhos-motion {
+	margin: 0 auto;
+	width: 60%;
+}
+
+.trabalhos-motion h2 {
+	font-size: 18pt;
+	font-weight: 600;
+	margin-bottom: 12px;
+	text-align: center;
+}
+
+.trabalhos-motion li {
+	margin: 12px auto 36px;
+}
+
+.trabalhos-motion iframe {
+	display: block;
+	margin: 0 auto;
+}
+
+.trabalhos-motion a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.trabalhos-motion a:hover {
+	text-decoration: underline;
+}
+
+.link-insta {
+	display: flow-root;
+	position: relative;
+	width: 560px;
+}
+
+.link-insta img {
+	float: left;
+	width: 240px;
+}
+
+.link-insta p {
+    bottom: 0px;
+	left: 260px;
+	line-height: 1.3em;
+	position: absolute;
+    width: calc(100% - 272px);
 }
 
 @media (max-width: 900px) {
@@ -255,5 +304,28 @@ iframe {
 
 	iframe {
 		width: 100%;
+	}
+
+	.trabalhos-motion {
+		width: 100%;
+	}
+
+	.link-insta {
+		width: 100%;
+	}
+	
+	.link-insta img {
+		display: block;
+		float: none;
+    	margin: 0 auto;
+		width: 240px;
+	}
+	
+	.link-insta p {
+		display: block;
+		margin: 12px auto 0;
+		position: inherit;
+		text-align: center;
+		width: 240px;
 	}
 }
